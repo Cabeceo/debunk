@@ -9,4 +9,5 @@ LABEL org.label-schema.vendor="Cabeceo, LLC" \
       org.label-schema.name="debunk" \
       org.label-schema.description="debian latest w/ debconf-utils, apt-utils and non-interactive set" \    
       org.label-schema.version="v1.0.0" \
-      org.label-schema.docker.schema-version="1.0"
+      org.label-schema.docker.schema-version="1.0" \
+      org.label-schema.vcs-url="https://github.com/Cabeceo/debunk"
