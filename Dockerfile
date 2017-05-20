@@ -3,3 +3,10 @@ FROM debian:latest
 RUN apt-get -qqy update && \
     apt-get install -y apt-utils debconf-utils && \
     echo 'debconf debconf/frontend select Noninteractive' | debconf-set-selections
+
+LABEL org.label-schema.vendor="Cabeceo, LLC" \
+      org.label-schema.url="http://cabeceo.co" \
+      org.label-schema.name="debunk" \
+      org.label-schema.description="debian latest w/ debconf-utils, apt-utils and non-interactive set" \    
+      org.label-schema.version="v1.0.0" \
+      org.label-schema.docker.schema-version="1.0"
